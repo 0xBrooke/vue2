@@ -1,0 +1,73 @@
+{
+  "name": "marketing-management",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "serve:test": "vue-cli-service serve --mode test",
+    "serve:mock": "vue-cli-service serve --mode mock",
+    "test": "vue-cli-service build --mode test",
+    "build": "vue-cli-service build",
+    "dll:dev": "rimraf public/dll.*.js && node scripts/dll.js development",
+    "lint": "vue-cli-service lint",
+    "prettier": "prettier-eslint --write src/*.{js,vue} src/**/*.{js,vue,scss,css} src/**/**/*.{js,vue,scss,css}"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "crypto-js": "^4.0.0",
+    "lodash": "^4.17.20",
+    "mint-ui": "^2.2.13",
+    "moment": "^2.29.1",
+    "qrcodejs2": "0.0.2",
+    "style-loader": "^2.0.0",
+    "vue": "^2.6.12",
+    "vue-router": "^3.4.9",
+    "vuex": "^3.6.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.12.1",
+    "@vue/cli-plugin-eslint": "^3.12.1",
+    "@vue/cli-service": "^4.5.9",
+    "@vue/eslint-config-prettier": "^5.1.0",
+    "assets-webpack-plugin": "^7.0.0",
+    "babel-eslint": "^10.1.0",
+    "css-loader": "^2.1.1",
+    "cssnano": "^4.1.8",
+    "eslint": "^5.16.0",
+    "eslint-plugin-prettier": "^3.3.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "husky": "^3.1.0",
+    "mockjs": "^1.1.0",
+    "node-sass": "^4.14.1",
+    "postcss-aspect-ratio-mini": "^1.0.1",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-px-to-viewport": "^1.1.0",
+    "postcss-url": "^8.0.0",
+    "postcss-viewport-units": "^0.1.6",
+    "postcss-write-svg": "^3.0.1",
+    "prettier": "^1.19.1",
+    "prettier-eslint-cli": "^5.0.0",
+    "rimraf": "^3.0.2",
+    "sass-loader": "^8.0.2",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "vconsole-webpack-plugin": "^1.5.2",
+    "vue-template-compiler": "^2.6.12",
+    "vuex-persistedstate": "^2.7.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "description": "### 安装 ``` yarn install  或 yarn add [package]@[version] [-D] ```",
+  "main": ".eslintrc.js",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@project.gmfcloud.com:2222/source/marketing-management.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

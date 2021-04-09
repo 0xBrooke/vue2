@@ -1,0 +1,9 @@
+dist
+node_modules
+public
+scripts
+/.*
+/*.js
+/*.json
+README.md
+yarn.lock
